@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"os"
+	_ "regexp"
 )
 
 // По условию задачи, дан набор высказываний одного из четырёх
@@ -29,11 +30,20 @@ import (
 // количество очков, в формате «A is x.», а если таких несколько, то
 // отсортировать в алфавитном порядк
 
+// in
+// 3 - quetity of numbers
+// 10 - #1
+// 20 - #2
+// 30 - #3
+
 func main(){
 	in, out := getBuffers()
 	defer out.Flush()
 	// Создаю мапу ИМЯ: ЗНАЧЕНИЕ
 	// mp := make(map[string]int)
+
+
+
 	print(in, out)
 
 }
